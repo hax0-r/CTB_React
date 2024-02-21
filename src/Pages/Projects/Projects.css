@@ -1,0 +1,143 @@
+.project {
+    .page1 {
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 40vw;
+            background: url(../../assets/Projects/project.png) rgba(7, 7, 7, 0.4);
+            background-blend-mode: multiply;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .hero h1 {
+            font-family: "Noto Sans", sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: -0.8px;
+            line-height: 60px;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            word-spacing: 0px;
+        }
+    }
+
+    .page2 {
+
+        .text {
+            text-align: center;
+            background-color: #f6f6f6;
+            padding: 2rem 0;
+            margin: 0 auto;
+            max-width: 1140px;
+            padding: 5vw 0 4vw 0;
+        }
+
+        .text h2 {
+            font-family: "Noto Sans", sans-serif;
+            font-size: 45px;
+            font-weight: 800;
+            letter-spacing: -0.2px;
+            line-height: 61.29px;
+            color: rgb(250, 176, 18);
+            text-align: center;
+            word-spacing: 0px;
+            padding-bottom: 1rem;
+        }
+
+        .text p {
+            font-family: "Noto Sans";
+            font-size: 17px;
+            line-height: 21px;
+            color: rgb(101, 101, 101);
+            text-align: center;
+            padding: 0 1rem;
+            word-spacing: 0px;
+        }
+
+        .allprojects {
+            padding: 0 0px 5rem 0px;
+            background-color: #f6f6f6;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
+        .project {
+            width: 410px;
+            margin: 1rem;
+            height: 600px;
+            position: relative;
+        }
+
+        .project:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 300px;
+            background: linear-gradient(180deg, rgba(0, 0, 0, 0), black);
+        }
+
+        .project img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .project p {
+            color: white;
+            z-index: 8;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            position: absolute;
+            font-family: "Noto Sans";
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 24px;
+            text-align: center;
+            word-spacing: 0px;
+        }
+
+        @media (min-width: 1224px) {}
+
+
+
+        @media (max-width: 1024px) {
+            .text {
+                padding: 2rem 1rem;
+            }
+
+            .text h2 {
+                font-size: 32px;
+            }
+
+            .text p {
+                font-size: .9rem;
+            }
+        }
+
+        @media (max-width: 764px) {
+
+            .hero h1 {
+                font-size: 2rem;
+
+            }
+        }
+
+        @media (max-width: 500px) {
+
+            .project {
+                width: 310px;
+                height: 400px;
+            }
+        }
+    }
+}

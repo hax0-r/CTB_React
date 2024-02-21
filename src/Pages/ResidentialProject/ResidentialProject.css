@@ -1,0 +1,193 @@
+.ResidentialProject {
+    .page1 {
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 40vw;
+            background: url(../../assets/ResidentialProject/bg.png) rgba(7, 7, 7, 0.4);
+            background-blend-mode: multiply;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .hero h1 {
+            font-family: "Noto Sans", sans-serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: -0.8px;
+            line-height: 60px;
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+            word-spacing: 0px;
+            text-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px;
+        }
+    }
+
+    .page2 {
+        .slider {
+            background-color: #f6f6f6;
+            text-align: center;
+            padding: 6vw 10vw;
+
+            overflow: hidden;
+        }
+
+        .slider .slidertitle {
+            font-family: "Noto Sans", sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+            color: #fab012;
+            text-align: center;
+            padding-bottom: 2rem;
+            word-spacing: 0px;
+        }
+
+        .slider .slidertext {
+            font-family: "Noto Sans", sans-serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+            color: #fab012;
+            text-align: center;
+            word-spacing: 0px;
+        }
+
+        .sliderarea i {
+            font-size: 1.5rem;
+            color: black;
+        }
+
+        .sliderarea {
+            font-family: "Noto Sans", sans-serif;
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: rgb(84, 89, 95);
+            text-align: center;
+            word-spacing: 0px;
+            padding-bottom: 1rem;
+        }
+
+
+        .carousel-indicators {
+            position: static !important;
+        }
+
+        .carousel-indicators li {
+            width: 800px !important;
+            height: 100%;
+            opacity: 0.8;
+        }
+
+        .theslider {
+            margin: 1rem auto;
+            width: 100%;
+            max-width: 1120px;
+        }
+
+        .slider-for img {
+            object-fit: cover;
+            width: 100%;
+            height: 30rem !important;
+        }
+
+
+        .slider-nav img {
+            object-fit: cover;
+            padding: .25rem;
+            width: 100%;
+            height: 10rem !important;
+        }
+
+
+        @media (max-width: 1024px) {
+
+
+            .slider {
+                padding-top: 4rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+
+
+            .slider h2 {
+                font-size: 2.5rem;
+            }
+
+            .slider p {
+                font-size: 1.25rem;
+            }
+
+            .slider i {
+                font-size: 1.25rem;
+            }
+
+            .slider span {
+                font-size: 1rem;
+            }
+
+
+        }
+
+        @media (max-width: 764px) {
+
+
+
+            .hero {
+                height: 45vh;
+            }
+
+            .slider {
+                padding: 2rem 2vw;
+                padding-bottom: 7rem;
+                padding-top: 4rem;
+            }
+
+            .hero h1 {
+                margin-top: 60px;
+                font-size: 2.5rem;
+
+            }
+
+
+            .slider-for img {
+                height: 25rem !important;
+            }
+
+
+            .slider-nav img {
+                height: 6rem !important;
+            }
+
+
+            .slider h2 {
+                font-size: 1.75rem;
+            }
+
+            .slider p {
+                font-size: 1rem;
+            }
+
+            .slider i {
+                font-size: 1.25rem;
+            }
+
+            .slider span {
+                font-size: 1.25rem;
+            }
+
+            .slider .slidertitle {
+                font-size: 2.3rem;
+                padding: 0 1rem 1rem 1rem;
+            }
+
+        }
+    }
+}

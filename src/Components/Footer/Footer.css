@@ -1,0 +1,205 @@
+footer {
+    width: 100%;
+}
+
+footer .section1 {
+    height: 165px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    background-image: url("../../assets/Footer/footer.png");
+    background-position: center;
+}
+
+footer .section1 .contact {
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+footer .section1 h4 {
+    font-family: "Noto Sans", sans-serif;
+    color: #fab012;
+    font-size: 35px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+footer .section1 h4 div {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+    margin-left: 10px;
+    color: white;
+}
+
+footer .section1 button {
+    color: white;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 18px;
+    border: none;
+    background: #fab012;
+    padding: 15px 35px;
+    border-radius: 3px;
+    border: 2px solid #FAB012;
+    transition: 200ms all;
+}
+
+footer .section1 button:hover {
+    background-color: transparent;
+    color: #fab012;
+}
+
+footer .section2 {
+    text-decoration: none;
+    background: black;
+    width: 100%;
+    color: white;
+    padding: 70px 30px;
+    display: flex;
+    justify-content: center;
+    margin: 0 0;
+}
+
+footer .section2 .left {
+    padding-right: 7%;
+}
+
+footer .section2 .left h5 {
+    color: #FAB012;
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+footer .section2 .left p {
+    color: #DEDEDE;
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+footer .section2 .mid {
+    padding-right: 2%;
+}
+
+footer .section2 .mid p {
+    color: #FFFFFF;
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+footer .section2 .mid ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer .section2 .mid ul li {
+    padding: 4px 0;
+}
+
+footer .section2 .mid ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 200ms all;
+}
+
+footer .section2 .mid ul li a:hover {
+    color: #FAB012;
+}
+
+footer .section2 .right p {
+    color: #FFFFFF;
+    font-family: "Noto Sans", Sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+footer .section2 .right ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+footer .section2 .right ul li {
+    padding: 4px 0;
+}
+
+footer .section2 .right ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 0;
+}
+
+footer .section2 .right ul li a i {
+    padding-right: 10px;
+}
+
+footer .section3 {
+    padding: 20px;
+    text-align: center;
+    color: #000000;
+    font-family: "Open Sans", Sans-serif;
+    font-size: 1rem;
+    line-height: 1.5em;
+    font-weight: 500;
+}
+
+
+footer .section3 p {
+    margin-bottom: 0;
+}
+
+
+@media (max-width: 1024px) {
+    footer .section1 .contact {
+        text-align: center;
+        display: block;
+    }
+
+    footer .section1 {
+        text-align: center;
+        flex-direction: column;
+    }
+
+    footer .section1 h4 {
+        font-size: 25px;
+    }
+
+    footer .section1 h4 div {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+
+    footer .section2 .left h5 {
+        font-size: 1.5rem;
+    }
+
+    footer .section2 .left p {
+
+        font-size: 16px;
+        max-width: 30rem;
+        width: 100%;
+        padding-bottom: 1.5rem;
+
+    }
+}
+
+@media (max-width: 600px) {
+    footer .section2 .mid {
+        padding-bottom: 1.5rem;
+    }
+
+    footer .section2 .right {
+        padding-bottom: 1.5rem;
+    }
+
+    footer .section2 {
+        padding-bottom: unset;
+    }
+}

@@ -1,0 +1,486 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+
+.home {
+    .page1 {
+        .carousel-inner .carousel-item {
+            background-color: #000000;
+        }
+
+        .carousel-inner .carousel-item img {
+            opacity: 0.5;
+            height: 600px;
+            -o-object-fit: cover;
+            object-fit: cover;
+        }
+
+        .carousel-control-prev {
+            width: auto !important;
+            opacity: 1 !important;
+            top: unset !important;
+            left: 50% !important;
+            bottom: 12px !important;
+            transform: translateX(-120%) !important;
+            border: 2px solid white !important;
+            padding: 1px !important;
+            border-radius: 40px;
+        }
+
+        .carousel-control-next-icon,
+        .carousel-control-prev-icon {
+            background-size: 20px !important;
+        }
+
+        .carousel-control-next-icon:hover,
+        .carousel-control-prev-icon:hover {
+            background-size: 22px !important;
+        }
+
+        .carousel-control-next {
+            width: auto !important;
+            opacity: 1 !important;
+            top: unset !important;
+            right: 50% !important;
+            bottom: 12px !important;
+            transform: translateX(120%) !important;
+            border: 2px solid white !important;
+            padding: 1px !important;
+            border-radius: 40px;
+
+        }
+
+        .carousel-caption {
+            text-align: center;
+            top: 70%;
+            transform: translateY(-70%);
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .carousel-caption h1 {
+            color: white;
+            font-family: "Noto Sans", Sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 8px black;
+            line-height: 30px;
+        }
+
+        .carousel-caption h2 {
+            color: #FAB012;
+            font-family: "Noto Sans", Sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            text-shadow: 2px 2px 8px black;
+        }
+
+        .carousel-caption p {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+        .carousel-caption .ca_btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        .carousel-caption .ca_btn button {
+            color: white;
+            font-family: "Noto Sans", sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 18px;
+            border: none;
+            background: #fab012;
+            padding: 15px 35px;
+            border: 2px solid #FAB012;
+            border-radius: 3px;
+            transition: 200ms all;
+        }
+
+        .carousel-caption .ca_btn button:hover {
+            background-color: transparent;
+            color: #FAB012;
+        }
+
+
+        @media (max-width:1449px) {
+            .carousel-caption {
+                text-align: center;
+                top: 50%;
+                transform: translateY(-60%);
+                bottom: 0;
+                left: 0;
+                right: 0;
+                margin: auto;
+            }
+
+            .carousel-inner .carousel-item img {
+                height: 410px;
+            }
+
+
+            .carousel-control-prev {
+                /* transform: translateX(-60px) !important; */
+            }
+
+            .carousel-control-next {
+                /* transform: translateX(60px) !important; */
+            }
+
+            .carousel-caption h1 {
+                font-size: 4rem;
+            }
+
+            .carousel-caption h2 {
+                font-size: 4rem;
+            }
+
+        }
+
+        @media (max-width: 1087px) {
+            .carousel-caption h2 {
+                font-size: 2.6rem;
+            }
+        }
+
+        @media (max-width: 1024px) {
+            .carousel-caption p {
+                width: 100%;
+            }
+
+            .carousel-caption h1 {
+                font-size: 3rem;
+                line-height: auto;
+            }
+        }
+
+
+
+        @media (max-width: 764px) {
+
+            .carousel-caption {}
+
+
+            .carousel-caption p {
+                font-size: 0.75rem;
+            }
+
+            .carousel-caption h1 {
+                font-size: 1.5rem;
+                line-height: auto;
+            }
+
+            .carousel-caption h2 {
+                font-size: 1.5rem;
+                line-height: auto;
+            }
+
+            .carousel-caption {
+                text-align: center;
+                top: 55%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .carousel-inner .carousel-item img {
+                height: 70vh;
+            }
+        }
+    }
+
+    .page2 {
+        .tr {
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .tr img {
+            width: 100%;
+        }
+
+        .tr .content {
+            text-align: center;
+            top: 10%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            /* left: 25%; */
+            width: 50%;
+            margin: auto;
+            padding: 2rem 0;
+            position: absolute;
+            z-index: 5;
+        }
+
+
+        .tr .content .about {
+            font-family: "Noto Sans", sans-serif;
+            text-align: center;
+            color: rgb(0, 0, 0);
+            font-family: Noto Sans;
+            font-size: 1.5rem;
+            font-weight: 500;
+            line-height: 2.06rem;
+            letter-spacing: 6%;
+            text-transform: uppercase;
+        }
+
+        .tr .content h3 {
+            font-family: "Noto Sans", sans-serif;
+            font-size: 45px;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+            line-height: 45px;
+            color: white;
+            text-align: center;
+            word-spacing: 0px;
+        }
+
+        .tr .content .text {
+            font-family: "Noto Sans", sans-serif;
+            font-size: 17px;
+            letter-spacing: -0.2px;
+            line-height: 23px;
+            color: white;
+            padding: 2rem 0 1rem 0;
+            text-align: center;
+            word-spacing: 0px;
+        }
+
+        .tr .content a {
+            font-family: "Noto Sans", sans-serif;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 17px;
+            color: #000000;
+            text-align: center;
+            word-spacing: 0px;
+        }
+
+    }
+
+    .page4 {
+
+
+        .Newsroom {
+            padding: 1vw 0 5vw 0;
+            margin: 3rem 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .Newsroom_head {
+            text-align: center;
+            width: 25%;
+            margin-right: 0.5rem;
+        }
+
+        .Newsroom_head h4 {
+            font-family: "Noto Sans";
+            margin-top: -20px;
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: #FAB012;
+            text-align: center;
+            word-spacing: 0px;
+        }
+
+        .Newsroom_head button {
+            /* font-family: "Noto Sans", sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 19px;
+  color: white;
+  text-align: center;
+  word-spacing: 0px;
+  background-color: #FAB012; */
+            color: white;
+            font-family: "Noto Sans", sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 18px;
+            border: none;
+            background: #fab012;
+            padding: 15px 50px;
+            border-radius: 4px;
+            transition: 200ms all;
+            border: 2px solid #FAB012;
+        }
+
+        .Newsroom_head button:hover {
+            background-color: transparent;
+            color: #FAB012;
+        }
+
+        .Newsroom_head p {
+            font-family: "Noto Sans", sans-serif;
+            font-size: 17px;
+            letter-spacing: -0.2px;
+            line-height: 17px;
+            color: rgb(101, 101, 101);
+            text-align: center;
+            word-spacing: 0px;
+        }
+
+        .imgbox_container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+        }
+
+        .imgbox {
+            text-align: center;
+            height: 100%;
+            max-width: 300px;
+            border: 0.5px solid gray;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+
+        .imgbox .content {
+            padding: 20px 20px 20px 20px
+        }
+
+        .meta {
+            margin-bottom: 0;
+        }
+
+        .imgbox img {
+            object-fit: cover;
+            width: 100%;
+            height: 220px;
+        }
+
+        .imgbox .titlebox {
+            height: 40px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .imgbox .title {
+
+            font-family: "Noto Sans", sans-serif;
+            font-size: 1rem;
+            line-height: 19px;
+            font-weight: 700;
+            letter-spacing: -0.2px;
+            text-decoration: none;
+            color: #FAB012;
+            text-align: center;
+            word-spacing: 0px;
+            width: 80%;
+            transition: 200ms all;
+
+        }
+
+        .imgbox .title:hover {
+            color: #fab01292;
+        }
+
+
+        @media (max-width: 1024px) {
+            .Newsroom {
+                margin: 3rem auto;
+                display: block;
+                text-align: center;
+            }
+
+            .Newsroom_head {
+
+                padding-bottom: 1rem;
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            .imgbox_container {
+                justify-content: space-evenly;
+                margin: 0 0.75rem;
+            }
+
+            .mob_clear {
+                display: none;
+            }
+
+            .imgbox {
+
+                height: 100%;
+                max-width: 300px;
+            }
+
+            .imgbox .content {
+                padding: 10px;
+            }
+
+            .meta {
+                font-size: 0.60rem;
+            }
+
+            .imgbox img {
+                object-fit: cover;
+                width: 100%;
+                height: 180px;
+            }
+
+            .imgbox .titlebox {
+                height: 40px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+            }
+
+            .imgbox .title {
+
+                font-family: "Noto Sans", sans-serif;
+                font-size: 0.85rem;
+                line-height: 19px;
+                font-weight: 700;
+                letter-spacing: -0.2px;
+                text-decoration: none;
+                color: #FAB012;
+                text-align: center;
+                word-spacing: 0px;
+                width: 80%;
+            }
+        }
+
+        @media (max-width: 500px) {
+            .Newsroom {
+                margin: .5rem auto;
+                padding: 1vw 0 12vw 0;
+            }
+
+            .Newsroom_head {
+                margin-bottom: 15px;
+            }
+
+        }
+
+    }
+
+    .page5 {
+
+        .video {
+            width: 100%;
+            height: 40vw;
+            margin-bottom: -10px;
+        }
+
+        .video video {
+            object-fit: cover;
+        }
+
+        @media (max-width:768px) {
+            .video {
+                height: 100%;
+            }
+        }
+    }
+}
