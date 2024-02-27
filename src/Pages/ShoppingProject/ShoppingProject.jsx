@@ -12,18 +12,27 @@ export default function ShoppingProject() {
           </div>
         </div>
         <div className="page2">
+          <h1>Shopping Complex</h1>
           <div className="main">
-            <div className="slider1">
+            <div className="slider">
               <SmallSlider />
+              <h1>Shopping Complex on Bissonnet Street</h1>
+              <p>13646 Bissonnet St Houston, Texas 77083</p>
             </div>
-            <div className="slider2">
+            <div className="slider">
               <SmallSlider />
+              <h1>Shopping Complex on Alief Clodine</h1>
+              <p>13629 Alief Clodine Rd Houston, Texas 77082</p>
             </div>
-            <div className="slider3">
+            <div className="slider">
               <SmallSlider />
+              <h1>Shopping Complex on Beechnut Street</h1>
+              <p>17627 Beechnut St Houston, TX 77083</p>
             </div>
-            <div className="slider4">
+            <div className="slider">
               <SmallSlider />
+              <h1>Shopping Complex On Synott Rd</h1>
+              <p>10571 Synott Rd Houston, TX 77099</p>
             </div>
           </div>
         </div>

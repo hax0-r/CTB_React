@@ -1,5 +1,7 @@
 import React from 'react'
 import './Footer.css'
+import { NAV_DATA } from '../Navbar/NAV_DATA'
+import { NavLink } from 'react-router-dom'
 
 export default function Footer() {
     return (
@@ -21,10 +23,11 @@ export default function Footer() {
                     <div className="mid col-12 col-md-2">
                         <p>Menu</p>
                         <ul>
-                            <li><a href="./About.html">About Us</a></li>
-                            <li><a href="./Projects.html">Projects</a></li>
-                            <li><a href="./NewsRoom.html">News Room</a></li>
-                            <li><a href="./Contact.html">Contact Us</a></li>
+                            {
+                                NAV_DATA.map(({ navPath, navTitle, index }) => (
+                                    <NavLink to={navPath} key={index}><li>{navTitle}</li></NavLink>
+                                ))
+                            }
                         </ul>
                     </div>
                     <div className="right col-12 col-md-3">

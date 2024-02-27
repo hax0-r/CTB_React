@@ -24,6 +24,15 @@
             text-transform: uppercase;
             word-spacing: 0px;
         }
+        @media (max-width:500px) {
+            .hero {
+                height: 40vh;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+        }
     }
 
     .page2 {

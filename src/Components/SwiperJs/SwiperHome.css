@@ -1,0 +1,175 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  } */
+
+.swiperHomes {
+    height: 70vh;
+    position: relative;
+
+    .swiper-button-prev:after,
+    .swiper-button-next:after {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        color: #ffffff;
+        background: transparent;
+        padding: .8rem;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+    }
+
+    .swiper-pagination {
+        display: none;
+    }
+
+    .swiper-slide {
+        background: transparent;
+    }
+
+    .swiper-button-next,
+    .swiper-rtl .swiper-button-prev {
+        margin-right: 1rem;
+    }
+
+    .swiper-button-prev,
+    .swiper-rtl .swiper-button-next {
+        margin-left: 1rem;
+    }
+
+    .innerSectionHome {
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+        padding-bottom: 3rem;
+        gap: 1rem;
+
+        img {
+            position: absolute;
+            inset: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -9;
+        }
+
+        h1 {
+            color: white;
+            font-family: "Noto Sans", Sans-serif;
+            font-size: 4rem;
+            font-weight: bolder;
+            text-shadow: 2px 2px 8px black;
+
+            span {
+                color: #FAB012;
+                font-family: "Noto Sans", Sans-serif;
+                text-shadow: 2px 2px 8px black;
+            }
+        }
+
+        p {
+            color: #ffffff;
+            background-color: #0000007b;
+            padding: .2rem 0;
+            font-size: 1rem;
+            margin: 0 .5rem;
+        }
+
+        button {
+            color: white;
+            font-family: "Noto Sans", sans-serif;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 18px;
+            border: none;
+            background: #fab012;
+            padding: 15px 35px;
+            width: 11rem;
+            border: 2px solid #FAB012;
+            border-radius: 3px;
+            transition: 200ms all;
+
+            &:hover {
+                background-color: transparent;
+                color: #FAB012;
+            }
+        }
+    }
+}
+
+@media (max-width:998px) {
+    .swiperHomes {
+        height: 50vh;
+
+        .innerSectionHome {
+            height: 50vh;
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .swiperHomes {
+        height: 40vh;
+
+        .innerSectionHome {
+            height: 40vh;
+            padding-bottom: 1.5rem;
+
+            h1 {
+                font-size: 3rem;
+            }
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .swiperHomes {
+        height: 50vh;
+
+        .swiper-button-prev:after,
+        .swiper-button-next:after {
+            font-size: .6rem;
+            padding: .5rem;
+        }
+
+        .innerSectionHome {
+            height: 50vh;
+            padding-bottom: 1.5rem;
+
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            button {
+                font-size: 1rem;
+                font-weight: 500;
+                padding: 13px 0;
+                width: 9rem;
+            }
+        }
+    }
+}

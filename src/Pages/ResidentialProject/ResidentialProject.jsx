@@ -12,7 +12,7 @@ export default function ResidentialProject() {
           </div>
         </div>
         <div className="page2">
-          <SlickSlider/>
+          <SlickSlider />
         </div>
       </div>
     </>

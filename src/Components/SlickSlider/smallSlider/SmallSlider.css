@@ -1,15 +1,18 @@
-.slicSlider{
+.slicSlider {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-  padding: 6vw 10vw;
+    padding: 0vw 0vw;
 
 }
+
 .imgH {
     height: 136px;
-    width: 242px;
+    max-width: 242px;
+    width: 100%;
 }
+
 .slideT {
     height: 450px;
     width: 100%;
@@ -26,7 +29,29 @@
     word-spacing: 0px;
 }
 
-.slideMain{
+.slideMain {
     max-width: 490px;
     width: 100%;
+}
+
+@media (max-width:500px) {
+    .slideMain {
+        max-width: 350px;
+        width: 100%;
+    }
+
+    .slideT {
+        height: 300px;
+        width: 100%;
+    }
+
+    .imgH {
+        height: 120px;
+        max-width: 242px;
+        width: 100%;
+    }
+    .slidertitle{
+        font-size: 2rem;
+    }
+
 }

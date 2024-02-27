@@ -10,18 +10,22 @@ import pg4img2 from '../../assets/Home/pg4img2.png'
 import pg4img3 from '../../assets/Home/pg4img3.png'
 import video from '../../assets/Home/homeVideo.mp4'
 import { Link } from 'react-router-dom'
+import SwiperHome from '../../Components/SwiperJs/SwiperHome'
 
 export default function Home() {
     return (
         <>
             <div className="home">
                 <div className="page1">
-                    <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
+                    <SwiperHome/>
+                   
+
+
+                {/* <div id="carouselExampleAutoplaying" className="carousel slide" data-bs-ride="carousel">
                         <div className="carousel-inner">
                             <div className="carousel-item active">
                                 <img src={slider1} className="d-block w-100" alt="..." />
                                 <div className="carousel-caption d-md-block">
-                                    {/* <h5>First slide label</h5> */}
                                     <h1>LET'S BUILD A BETTER</h1>
                                     <h2>COMMUNITY, TOGETHER</h2>
                                     <p>Let us handle your construction so you focus on your business</p>
@@ -33,7 +37,6 @@ export default function Home() {
                             <div className="carousel-item">
                                 <img src={slider2} className="d-block w-100" alt="..." />
                                 <div className="carousel-caption d-md-block">
-                                    {/* <h5>First slide label</h5> */}
                                     <h1>LET'S BUILD A BETTER</h1>
                                     <h2>COMMUNITY, TOGETHER</h2>
                                     <p>Let us handle your construction so you focus on your business</p>
@@ -45,7 +48,6 @@ export default function Home() {
                             <div className="carousel-item">
                                 <img src={slider3} className="d-block w-100" alt="..." />
                                 <div className="carousel-caption d-md-block">
-                                    {/* <h5>First slide label</h5> */}
                                     <h1>LET'S BUILD A BETTER</h1>
                                     <h2>COMMUNITY, TOGETHER</h2>
                                     <p>Let us handle your construction so you focus on your business</p>
@@ -57,7 +59,6 @@ export default function Home() {
                             <div className="carousel-item">
                                 <img src={slider4} className="d-block w-100" alt="..." />
                                 <div className="carousel-caption d-md-block">
-                                    {/* <h5>First slide label</h5> */}
                                     <h1>LET'S BUILD A BETTER</h1>
                                     <h2>COMMUNITY, TOGETHER</h2>
                                     <p>Let us handle your construction so you focus on your business</p>
@@ -75,7 +76,11 @@ export default function Home() {
                             <span className="carousel-control-next-icon" aria-hidden="true" />
                             <span className="visually-hidden">Next</span>
                         </button>
-                    </div>
+                    </div> */}
+
+
+
+                   
                 </div>
                 <div className="page2">
                     <div className="tr">

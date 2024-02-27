@@ -25,6 +25,16 @@
             word-spacing: 0px;
             text-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px;
         }
+        
+        @media (max-width:500px) {
+            .hero {
+                height: 40vh;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+        }
     }
 
     .rightOrange {
@@ -35,6 +45,15 @@
         width: 357px;
         height: 180vh;
         background-color: #fab012;
+        /* display: none; */
+    }
+    
+    @media (max-width:1024px) {
+        .rightOrange {
+            display: none;
+        }
+
+
     }
 
     .page2 {
@@ -77,15 +96,31 @@
         }
 
         .contact_form input {
-            padding: 0.5rem;
+            padding: 1rem;
+            border-radius: 5px;
+            outline: none;
             margin: 1rem 0;
+            color: black;
+            font-weight: 500;
+            letter-spacing: .05rem;
             border: 1px solid rgba(128, 128, 128, 0.466);
+
+            &::placeholder {
+                color: #0000007e;
+            }
         }
 
         .contact_form textarea {
-            padding: 0.5rem;
+            font-weight: 500;
+            letter-spacing: .05rem;
+            outline: none;
             margin: 1rem 0;
             border: 1px solid rgba(128, 128, 128, 0.466);
+
+            padding: 1rem 0 0 1rem  ;
+            &::placeholder {
+                color: #0000007e;
+            }
         }
 
         .contact_form button {
@@ -115,10 +150,10 @@
 
         .imgbox img {
             object-fit: cover;
-            height: 445px;
-            width: 500px;
-            /* width: 70%;
-            height: 70vh; */
+            /* height: 445px;
+            width: 500px; */
+            width: 70%;
+            height: 57vh;
             margin-top: 5rem;
 
         }
@@ -130,10 +165,6 @@
             }
 
             .contact_right {
-                display: none;
-            }
-
-            .rightOrange {
                 display: none;
             }
 
@@ -163,6 +194,7 @@
         @media (max-width: 764px) {
 
             .contact_form h2 {
+                padding-top: 1rem;
                 font-size: 32px;
             }
 

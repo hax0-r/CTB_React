@@ -10,6 +10,7 @@ import grid5 from '../../assets/About/grid5.jpg'
 import grid6 from '../../assets/About/grid6.jpg'
 import pg4img1 from '../../assets/About/pg4img1.jpg'
 import pg4img2 from '../../assets/About/pg4img2.jpg'
+import AboutSection from '../../Components/SlickSlider/AboutSection/AboutSection'
 
 export default function About() {
   return (
@@ -51,20 +52,6 @@ export default function About() {
                 Our team pays meticulous attention to detail, creating exquisite living spaces and functional commercial
                 environments while prioritizing budget limitations.</p>
             </div>
-            {/* <div class="section2_bottom">
-            <div class="row UPPER">
-                <img class="col-4" src="/assets/Rectangle-10.png">
-                <img class="col-4" src="/assets/Rectangle-10.png">
-                <img class="col-4" src="/assets/Rectangle-10.png">
-            </div>
-            <div class="row LOWER">
-                <img class="col-4" src="/assets/Rectangle-10.png">
-                <img class="col-4" src="/assets/Rectangle-10.png">
-                <img class="col-4" src="/assets/Rectangle-10.png">
-            </div>
-
-        </div>
-         */}
             <div className="section2_bottom">
               <div className="row gy-2 gx-2 grid">
                 <img className="col" src={grid1} />
@@ -77,15 +64,8 @@ export default function About() {
                 <img className="col" src={grid6} />
               </div>
             </div>
-            <div className="resslider">
-              <div className="multiple-items">
-                <div><img src="/assets/grid1.jpg" /></div>
-                <div><img src="/assets/grid2.jpg" /></div>
-                <div><img src="/assets/grid3.jpg" /></div>
-                <div><img src="/assets/grid4.jpg" /></div>
-                <div><img src="/assets/grid5.jpg" /></div>
-                <div><img src="/assets/grid6.jpg" /></div>
-              </div>
+            <div className="AboutSection">
+              <AboutSection/>
             </div>
           </div>
         </div>

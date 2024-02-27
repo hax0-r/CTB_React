@@ -17,11 +17,9 @@ function SlickSlider() {
   return (
     <>
       <div className="slicSlider">
-
-        <div className="slideMain">
-
+        <div className="slideMain1">
           <div className="slider-container">
-            <h2 class="slidertitle">Residential Projects</h2>
+            <h2 class="slidertitle resFor">Residential Projects</h2>
             <Slider asNavFor={nav2} ref={slider => (sliderRef1 = slider)}>
               <div>
                 <img src={img1} alt="" className="slideT" />
@@ -45,26 +43,26 @@ function SlickSlider() {
             <Slider
               asNavFor={nav1}
               ref={slider => (sliderRef2 = slider)}
-              slidesToShow={3}
+              slidesToShow={4}
               dots={false}
               swipeToSlide={true}
-              centerMode={true}
+              // centerMode={true}
               focusOnSelect={true}
             >
               <div>
-                <img src={img2} alt="" className="imgH w-100" />
+                <img src={img2} alt="" className="imgBottom w-100" />
               </div>
               <div>
-                <img src={img2} alt="" className="imgH w-100" />
+                <img src={img2} alt="" className="imgBottom w-100" />
               </div>
               <div>
-                <img src={img2} alt="" className="imgH w-100" />
+                <img src={img2} alt="" className="imgBottom w-100" />
               </div>
               <div>
-                <img src={img2} alt="" className="imgH w-100" />
+                <img src={img2} alt="" className="imgBottom w-100" />
               </div>
               <div>
-                <img src={img2} alt="" className="imgH w-100" />
+                <img src={img2} alt="" className="imgBottom w-100" />
               </div>
               <div>
                 <img src={img2} alt="" className="imgH w-100" />

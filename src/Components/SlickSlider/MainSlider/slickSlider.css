@@ -1,14 +1,16 @@
-.slicSlider{
+.slicSlider {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-  padding: 6vw 10vw;
+    padding: 6vw 10vw;
 
 }
+
 .imgH {
     height: 160px;
 }
+
 .slideT {
     height: 30rem;
     width: 100%;
@@ -25,7 +27,23 @@
     word-spacing: 0px;
 }
 
-.slideMain{
-    max-width: 1120px;
+.slideMain1 {
+    width: 1120px;
+}
+
+.imgBottom {
+    height: 136px;
     width: 100%;
+}
+
+@media (max-width:768px) {
+    .slidertitle {
+        font-size: 2rem;
+    }
+}
+@media (max-width:500px) {
+    .slidertitle {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+    }
 }

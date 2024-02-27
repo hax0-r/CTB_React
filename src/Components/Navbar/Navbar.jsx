@@ -1,72 +1,87 @@
 import React from 'react'
+import { useRef } from 'react'
 import logo from '../../assets/logo.png'
-import { NavLink } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+import { FaBars } from "react-icons/fa";
 import { IoMdArrowDropdown } from "react-icons/io";
 import { IoSearch } from "react-icons/io5";
-import { AiFillDownSquare } from "react-icons/ai";
 import { FaPhoneAlt } from "react-icons/fa";
+import { NAV_DATA, NAV_DROPDOWN } from './NAV_DATA';
+
+
 
 
 
 export default function Navbar() {
+    let mobile = useRef()
+    let mobileClick = useRef()
+    let iconRotate = useRef()
+
+    const showHide = () => {
+        mobile.current.classList.toggle("height")
+    }
+    const showHideDrop = () => {
+        mobileClick.current.classList.toggle("heightdrop")
+        mobile.current.classList.toggle("heightMax")
+        iconRotate.current.classList.toggle("icon")
+    }
+
     return (
         <>
-            <header>
-                <nav className="mainnav">
+            <nav>
+                <div className="main">
+                    <button className='bar' onClick={showHide} ><FaBars /></button>
                     <div className="left">
-                        <button id="res_menubtn" onclick="toggleMenu()" className="res_menubtn"><i className="fa fa-bars" aria-hidden="true" /></button>
-                        <div className="logo">
-                            <a href="/Home.html">
-                                <img src={logo} alt="" />
-                            </a>
-                        </div>
-                        <button className="res_phone"><i className="fa-solid fa-phone" aria-hidden="true" /></button>
+                        <Link to={NAV_DATA[0].navPath}>
+                            <img src={logo} alt="" />
+                        </Link>
                         <ul>
-                            <li><NavLink to="/" >Home</NavLink></li>
-                            <li><NavLink to="/about" >About Us</NavLink></li>
-                            <li><NavLink to="/newroom" >News Room</NavLink></li>
-                            <div className="dropdown">
-                                <NavLink className="drop" to="/project">
-                                    <button className="dropbtn">Projects <IoMdArrowDropdown /></button>
-                                </NavLink>
-                                <div className="dropdown-content">
-                                    <NavLink to="/residential">Residential Projects</NavLink>
-                                    <NavLink to="/shopping">Shopping Complex</NavLink>
-                                    <NavLink to="/gasstation">Gas Stations</NavLink>
-                                    <NavLink to="/completed">Completed Projects</NavLink>
-                                </div>
+                            {
+                                NAV_DATA.map(({ navTitle, navPath }) => (
+                                    <NavLink to={navPath}> <li>{navTitle}</li></NavLink>
+                                ))
+                            }
+                            <div className='hover'>
+                                <NavLink to='/project'><li>Project <IoMdArrowDropdown /></li></NavLink>
+                                <ul>
+                                    {
+                                        NAV_DROPDOWN.map(({ navTitle, navPath, index }) => (
+                                            <Link to={navPath} key={index}><li>{navTitle}</li></Link>
+                                        ))
+                                    }
+                                </ul>
                             </div>
-                            <li><NavLink to="contact">Contact Us</NavLink></li>
                         </ul>
                     </div>
+                    <button className='pho'><FaPhoneAlt /></button>
                     <div className="right">
-                        <button onclick="openSearch()"><IoSearch /></button>
-                        <button className="phoneno"><FaPhoneAlt /> (832) 863-1819</button>
+                        <IoSearch />
+                        <button><FaPhoneAlt />(832)863-1819</button>
                     </div>
-                    <div id="res_menu" className="res_menu">
+                </div>
+                <div className="mobile" ref={mobile}>
+                    <div className="drop">
                         <ul>
-                            <li><a href="/Home.html">Home</a></li>
-                            <li><a href="/About.html">About Us</a></li>
-                            <li><a href="/NewsRoom.html">News Room</a></li>
-                            <div className="res_dropdown">
-                                <a className="res_dropdownbtn" href="/Projects.html"><button>
-                                    Projects
-                                </button></a>
-                                <button onclick="toggleResMenu()" className="menubtn">
-                                    <i className="fa fa-caret-down fa-sm" aria-hidden="true" />
-                                </button>
+                            {
+                                NAV_DATA.map(({ navPath, navTitle, index }) => (
+                                    <NavLink to={navPath} key={index}><li>{navTitle}</li></NavLink>
+                                ))
+                            }
+                            <div >
+                                <li>Project <button onClick={showHideDrop} ref={iconRotate}><IoMdArrowDropdown /></button></li>
+                                <ul ref={mobileClick}>
+                                    {
+                                        NAV_DROPDOWN.map(({ navPath, navTitle, index }) => (
+                                            <NavLink to={navPath} key={index}><li>{navTitle}</li></NavLink>
+                                        ))
+                                    }
+                                    <NavLink onClick={showHide} to="/" ><li>home</li></NavLink>
+                                </ul>
                             </div>
-                            <ul id="res_dropdown" className="res_dropdownmenu">
-                                <li><a href="/Residential.html">Residential Projects</a></li>
-                                <li><a href="/Shopping.html">Shopping Complex</a></li>
-                                <li><a href="/GasStations.html">Gas Stations</a></li>
-                                <li><a href="/CompletedProjects.html">Completed Projects</a></li>
-                            </ul>
-                            <li><a href="/Contact.html">Contact Us</a></li>
                         </ul>
                     </div>
-                </nav>
-            </header>
+                </div>
+            </nav>
         </>
     )
 }
