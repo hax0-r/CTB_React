@@ -1,8 +1,10 @@
 import React from 'react'
 import './NewRoom.css'
 import new1 from '../../assets/NewRoom/news1.jpg'
-import new2 from '../../assets/NewRoom/news2.jpg'
-import new3 from '../../assets/NewRoom/news3.jpg'
+// import new3 from '../../assets/NewRoom/news3.jpg'
+import new2 from '../../assets/Home/pg4img2.png'
+import new3 from '../../assets/Home/pg4img2.png'
+// import new2 from '../../assets/NewRoom/news2.jpg'
 
 export default function NewRoom() {
   return (

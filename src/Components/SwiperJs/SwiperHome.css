@@ -22,7 +22,8 @@
   } */
 
 .swiperHomes {
-    height: 70vh;
+    /* width: 100vw; */
+    height: 650px;
     position: relative;
 
     .swiper-button-prev:after,
@@ -57,18 +58,21 @@
     }
 
     .innerSectionHome {
-        height: 70vh;
+        /* height: 70vh; */
         display: flex;
         flex-direction: column;
         justify-content: end;
         align-items: center;
         padding-bottom: 3rem;
+        overflow: hidden;
         gap: 1rem;
 
         img {
             position: absolute;
-            inset: 0;
-            height: 100%;
+            top: 0;
+            left: 0;
+            height: 80vh;
+            /* height: 100%; */
             width: 100%;
             z-index: -9;
         }
@@ -119,10 +123,10 @@
 
 @media (max-width:998px) {
     .swiperHomes {
-        height: 50vh;
+        /* height: 50vh; */
 
         .innerSectionHome {
-            height: 50vh;
+            /* height: 50vh; */
 
             h1 {
                 font-size: 3rem;
@@ -133,10 +137,10 @@
 
 @media (max-width:768px) {
     .swiperHomes {
-        height: 40vh;
+        /* height: 40vh; */
 
         .innerSectionHome {
-            height: 40vh;
+            /* height: 40vh; */
             padding-bottom: 1.5rem;
 
             h1 {
@@ -148,26 +152,40 @@
 
 @media (max-width:500px) {
     .swiperHomes {
-        height: 50vh;
+        width: 100vw;
+        /* height: 50vh; */
 
         .swiper-button-prev:after,
         .swiper-button-next:after {
-            font-size: .6rem;
-            padding: .5rem;
+            /* font-size: .6rem;
+            padding: .5rem; */
+        }
+
+        .swiper-pagination-fraction,
+        .swiper-pagination-custom,
+        .swiper-horizontal>.swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal {
+            display: none;
+            bottom: 0;
         }
 
         .innerSectionHome {
-            height: 50vh;
-            padding-bottom: 1.5rem;
+            /* height: 50vh; */
+            /* padding-bottom: 1.5rem; */
 
             h1 {
-                font-size: 1.5rem;
+                /* font-size: 1.5rem; */
+            }
+
+            img {
+                width: 100%;
+                border: 1px solid red;
             }
 
             button {
-                font-size: 1rem;
+                /* font-size: 1rem; */
                 font-weight: 500;
-                padding: 13px 0;
+                /* padding: 13px 0; */
                 width: 9rem;
             }
         }

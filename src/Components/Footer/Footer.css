@@ -74,6 +74,7 @@ footer .section2 .left h5 {
     font-size: 2.5rem;
     font-weight: 700;
     text-transform: capitalize;
+    padding-bottom: 1rem;
 }
 
 footer .section2 .left p {
@@ -102,17 +103,18 @@ footer .section2 .mid ul {
 
 footer .section2 .mid ul li {
     padding: 4px 0;
+    transition: 200ms all;
 }
 
 footer .section2 .mid ul a {
     text-decoration: none;
-    color: white;
-    transition: 200ms all;
+    color: rgb(255, 255, 255);
 }
-
-footer .section2 .mid ul li a:hover {
+footer .section2 .mid ul li:hover {
+    padding-left: 5px;
     color: #FAB012;
 }
+
 
 footer .section2 .right p {
     color: #FFFFFF;
@@ -133,7 +135,22 @@ footer .section2 .right ul li {
 footer .section2 .right ul li a {
     text-decoration: none;
     color: white;
-    padding: 10px 0;
+    padding: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    justify-content: start;
+    max-width: 20rem;
+    width: 100%;
+    svg{
+        font-size: 1.1rem;
+    }
+}
+@media (max-width:760px) {
+    footer .section2 .right ul li a {
+        padding: 2px 0;
+    }
+    
 }
 
 footer .section2 .right ul li a i {

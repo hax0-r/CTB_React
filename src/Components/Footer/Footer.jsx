@@ -2,6 +2,10 @@ import React from 'react'
 import './Footer.css'
 import { NAV_DATA } from '../Navbar/NAV_DATA'
 import { NavLink } from 'react-router-dom'
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaClock } from "react-icons/fa";
+
 
 export default function Footer() {
     return (
@@ -33,10 +37,9 @@ export default function Footer() {
                     <div className="right col-12 col-md-3">
                         <p>Contact</p>
                         <ul>
-                            <li><a href><i className="fa-solid fa-phone fa-sm" />(832) 863-1819</a></li>
-                            <li><a href><i className="fa-regular fa-clock fa-sm" />Mon - Fri 09:00am - 06:00pm</a></li>
-                            <li><a href><i className="fa-solid fa-location-dot" />9217 Summerbell Lane, Houston, Texas,
-                                <br />77407</a></li>
+                            <li><a href><FaPhoneAlt />(832) 863-1819</a></li>
+                            <li><a href><FaClock />Mon - Fri 09:00am - 06:00pm</a></li>
+                            <li><a href><FaLocationDot />9217 Summerbell Lane, Houston, Texas, 77407</a></li>
                         </ul>
                     </div>
                     <div className="right col-12 col-md-2 col-xxl-1">

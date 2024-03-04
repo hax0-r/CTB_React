@@ -190,6 +190,7 @@
 
             .section1About {
                 margin: 2.5rem auto 1.4rem auto;
+                padding: 3vw 5vw;
             }
         }
 
@@ -227,7 +228,7 @@
 
         .section2_bottom {
             margin: 0 auto;
-            max-width: 1140px;
+            max-width: 1053px;
 
         }
 
@@ -475,7 +476,7 @@
 
             .section3 .content_top {
                 text-align: center;
-                padding: 4rem 2.5rem;
+                padding: 4rem 1rem;
                 width: 100%;
             }
 
@@ -492,7 +493,7 @@
 
             .section3 .content_bottom {
                 text-align: center;
-                padding: 4rem 2.5rem;
+                padding: 4rem 1rem;
                 width: 100%;
             }
 

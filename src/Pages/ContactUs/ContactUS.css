@@ -25,29 +25,30 @@
             word-spacing: 0px;
             text-shadow: rgba(0, 0, 0, 0.4) 0px 2px 5px;
         }
-        
+
         @media (max-width:500px) {
             .hero {
                 height: 40vh;
             }
+
             .hero h1 {
                 font-size: 2rem;
             }
-            
+
         }
     }
 
     .rightOrange {
         position: absolute;
         right: 0;
-        top: -22px;
+        /* top: -22px; */
         z-index: -1;
         width: 357px;
         height: 180vh;
         background-color: #fab012;
         /* display: none; */
     }
-    
+
     @media (max-width:1024px) {
         .rightOrange {
             display: none;
@@ -96,7 +97,7 @@
         }
 
         .contact_form input {
-            padding: 1rem;
+            padding: .7rem;
             border-radius: 5px;
             outline: none;
             margin: 1rem 0;
@@ -116,8 +117,10 @@
             outline: none;
             margin: 1rem 0;
             border: 1px solid rgba(128, 128, 128, 0.466);
+            border-radius: 5px;
 
-            padding: 1rem 0 0 1rem  ;
+            padding: 1rem 0 0 1rem;
+
             &::placeholder {
                 color: #0000007e;
             }

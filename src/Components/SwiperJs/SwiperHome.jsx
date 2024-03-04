@@ -1,61 +1,41 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
 import slider1 from '../../assets/slider.jpg'
 import slider2 from '../../assets/slider2.jpg'
 import slider3 from '../../assets/slider3.jpg'
 import slider4 from '../../assets/slider4.jpg'
 
-import React, { useRef, useState } from 'react';
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-
+import React, { useState } from 'react';
 import './SwiperHome.css';
 
 export default function SwiperHome() {
+    const [index, setIndex] = useState(0);
+
+    const handleSelect = (selectedIndex) => {
+        setIndex(selectedIndex);
+    };
     return (
         <>
-            <div className="swiperHomes">
-                <Swiper
-                    spaceBetween={30}
-                    centeredSlides={true}
-                    autoplay={{
-                        // delay: 2500,
-                        delay: 99999500,
-                        disableOnInteraction: false,
-                    }}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    navigation={true}
-                    modules={[Autoplay, Pagination, Navigation]}
-                    className="mySwiper"
-                >
-                    <SwiperSlide>
-                        <div className="innerSectionHome">
-                            <img src={slider1} alt="" />
-                            <h1>LET’S BUILD A BETTER <br /> <span>COMMUNITY, TOGETHER</span></h1>
-                            <p>Let us handle your construction so you can focus on growing your business</p>
-                            <button>Get A Quote</button>
-                        </div></SwiperSlide>
-                    <SwiperSlide>
-                        <div className="innerSectionHome">
-                            <img src={slider1} alt="" />
-                            <h1>LET’S BUILD A BETTER <br /> <span>COMMUNITY, TOGETHER</span></h1>
-                            <p>Let us handle your construction so you can focus on growing your business</p>
-                            <button>Get A Quote</button>
+            <div className="">
+                <div id="carouselExampleRide" className="carousel slide" data-bs-ride="true">
+                    <div className="carousel-inner">
+                        <div className="carousel-item active">
+                            <img src={slider4} className="d-block w-100" alt="..." />
                         </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className="innerSectionHome">
-                            <img src={slider1} alt="" />
-                            <h1>LET’S BUILD A BETTER <br /> <span>COMMUNITY, TOGETHER</span></h1>
-                            <p>Let us handle your construction so you can focus on growing your business</p>
-                            <button>Get A Quote</button>
+                        <div className="carousel-item">
+                            <img src="..." className="d-block w-100" alt="..." />
                         </div>
-                    </SwiperSlide>
-                </Swiper>
+                        <div className="carousel-item">
+                            <img src="..." className="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true" />
+                        <span className="visually-hidden">Previous</span>
+                    </button>
+                    <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true" />
+                        <span className="visually-hidden">Next</span>
+                    </button>
+                </div>
             </div>
         </>
     )

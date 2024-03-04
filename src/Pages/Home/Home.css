@@ -2,6 +2,7 @@
 
 
 .home {
+
     /* padding-top: 7rem; */
     .page1 {
         .carousel-inner .carousel-item {
@@ -205,6 +206,10 @@
             width: 100%;
         }
 
+        #ForMobile {
+            display: none;
+        }
+
         .tr .content {
             text-align: center;
             top: 10%;
@@ -264,6 +269,55 @@
             word-spacing: 0px;
         }
 
+
+        @media (max-width:1250px) {
+            .tr img {
+                width: 100%;
+                height: 36rem;
+            }
+        }
+
+        @media (max-width:998px) {
+            .tr img {
+                width: 100%;
+                display: none;
+            }
+
+            #ForMobile {
+                display: block;
+            }
+
+            .tr .content h3 {
+                font-size: 2rem;
+            }
+
+            .tr .content .text {
+                padding: 1rem 0 1rem 0;
+            }
+
+            .tr .content {
+                width: 90%;
+                padding: 0;
+            }
+        }
+
+        @media (max-width:998px) {
+
+            #ForMobile {
+                height: 45rem;
+            }
+        }
+
+    }
+
+    .page3 {
+        padding: 5vw 0;
+    }
+
+    @media (max-width:998px) {
+        .page3 {
+            padding: 10vw 0 0 0;
+        }
     }
 
     .page4 {
@@ -329,6 +383,7 @@
             color: rgb(101, 101, 101);
             text-align: center;
             word-spacing: 0px;
+            padding: .5rem 2rem;
         }
 
         .imgbox_container {
@@ -358,7 +413,7 @@
         .imgbox img {
             object-fit: cover;
             width: 100%;
-            height: 220px;
+            height: 265px;
         }
 
         .imgbox .titlebox {
@@ -403,7 +458,6 @@
             }
 
             .imgbox_container {
-                justify-content: space-evenly;
                 margin: 0 0.75rem;
             }
 
@@ -428,7 +482,6 @@
             .imgbox img {
                 object-fit: cover;
                 width: 100%;
-                height: 180px;
             }
 
             .imgbox .titlebox {
@@ -462,6 +515,9 @@
                 margin-bottom: 15px;
             }
 
+            .imgbox_container {
+                flex-wrap: wrap;
+            }
         }
 
     }
